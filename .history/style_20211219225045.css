@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator{
+    margin: 5rem auto;
+    overflow: hidden;
+    border: 4px solid black;
+    width: 240px;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 60px);
+}
+
+.calculator .screen{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-bottom: 2px solid black;
+}
+
+.calculator > *:not(.screen){
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+}
+
+

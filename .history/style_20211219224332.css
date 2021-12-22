@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator{
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid black;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+}
+
+.calculator .screen{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}

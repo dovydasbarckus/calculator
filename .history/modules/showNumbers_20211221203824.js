@@ -1,0 +1,14 @@
+
+export default class ShowNumbers{
+    constructor(id){
+        this.id = id;
+    }
+    show(sign, number){
+        if (sign === null){
+            this.id.textContent = number;
+        } else{
+            this.id.textContent = sign + " " + number;
+        }
+        
+    }
+}
